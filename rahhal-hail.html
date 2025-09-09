@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>رحّال | حائل</title>
+  <!--<meta name="description" content="لمسة تثقيفية عن مدينة حائل مقدّمة من رحّال: موقع سريع وخفيف للزوار لمسحه عبر QR من علبة اللعبة.">-->
+  <meta name="theme-color" content="#d2a15a">
+  <style>
+    :root {
+      --bg: #46646e;
+      --fg: #dadfe1;
+      --muted: #88a4ac;
+      --brand: #ffffff;
+      --card: #1a1a1a;
+      --accent: #6fb0ff;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Noto Kufi Arabic', 'Tajawal', 'Cairo', sans-serif;
+      line-height: 1.7;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .hero {
+      padding: 56px 20px 28px;
+      background: linear-gradient(180deg, #042433, transparent);
+    }
+    .tag {
+      display: inline-block;
+      padding: .25rem .6rem;
+      border: 1px solid var(--brand);
+      border-radius: 999px;
+      color: var(--brand);
+      font-size: .85rem;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: .2rem 0 1rem;
+      letter-spacing: .5px;
+    }
+    p.lead {
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 14px;
+      padding: 16px;
+      margin: 12px 0;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: .2rem 0 .6rem;
+    }
+    ul {
+      padding: 0 1.2rem;
+      margin: .4rem 0;
+    }
+    li {
+      margin: .25rem 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    @media (min-width: 720px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .badge {
+      display: inline-block;
+      background: #11343c;
+      color: var(--brand);
+      border: 1px solid #62cde0;
+      padding: .35rem .6rem;
+      border-radius: 10px;
+      margin: .15rem .25rem;
+      font-size: .85rem;
+    }
+    .footer {
+      opacity: .8;
+      font-size: .9rem;
+      padding: 28px 20px;
+      border-top: 1px dashed rgba(255,255,255,.1);
+      margin-top: 10px;
+    }
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--brand);
+      color: #090909;
+      padding: .7rem 1rem;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+    .ghost {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,.16);
+      color: var(--fg);
+    }
+    .small {
+      font-size: .9rem;
+      color: var(--muted);
+    }
+    .qr {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--card);
+      border: 1px dashed rgba(255,255,255,.1);
+      padding: 12px;
+      border-radius: 12px;
+      margin-top: 8px;
+    }
+    .mono {
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+    .chip {
+      display: inline-block;
+      background: #121212;
+      border: 1px solid rgba(255,255,255,.1);
+      padding: .2rem .5rem;
+      border-radius: 999px;
+      margin: .1rem .2rem;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <span class="tag">لمسة تثقيفية • رحّال</span>
+      <h1>حائل — مدينة الحكايات بين أجا وسلمى</h1>
+      <p class="lead">
+        نظرة سريعة على حائل: طبيعتها، تاريخها، وهويّتها الثقافية — كجزء من رحلة <strong>الرحّال</strong> ولعبة <strong>حكاة</strong>.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#facts" aria-label="انتقل إلى أهم الحقائق">أهم الحقائق</a>
+        <a class="btn ghost" href="#hakaa" aria-label="تعرف على لعبة حكاة">عن لعبة «حكاة»</a>
+      </div>
+      <!--<div class="qr">
+        <div>
+        <!--<div class="small">اقترحنا رابطاً قصيراً للطباعة على علبة اللعبة:</div>
+          <div class="mono">rahhal.sa/hail</div>
+          <div class="small">*يمكنكم استبدال الرابط عند الاستضافة الفعلية</div>-->
+        </div> 
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="facts" class="card">
+      <h2>أهم الحقائق السريعة</h2>
+      <div class="grid">
+        <ul>
+          <li>
+            <span class="badge">الموقع</span>
+            شمال غرب السعودية — عاصمة منطقة حائل، تتوسّط جبال <b>أجا</b> و<b>سلمى</b>.
+          </li>
+          <li>
+            <span class="badge">الطبيعة</span>
+            كثبان رملية وسهول وجبال، أجواء برّية ملائمة للمغامرة.
+          </li>
+          <li>
+            <span class="badge">التراث</span>
+            نقوش <b>جُبّة</b> الصخرية، قلاع تراثية مثل <b>أعيرف</b> وبرزان.
+          </li>
+          <li>
+            <span class="badge">القيم</span>
+            ارتبط اسمها بالكرم العربي (حاتم الطائي) ونار الضيف.
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <span class="badge">طريق الحجاج</span>
+            محطة تاريخية على طريق زبيدة.
+          </li>
+          <li>
+            <span class="badge">الثقافة</span>
+            شعر نبطي، حكايات مجالس، وأسواق شعبية.
+          </li>
+          <li>
+            <span class="badge">أكلات</span>
+            الكبيبة، الجريش، والقرصان.
+          </li>
+          <li>
+            <span class="badge">رموز بصرية</span>
+            أجا وسلمى، الشعلة/الضيافة، نقش جبّة.
+          </li>
+        </ul>
+      </div>
+      <p class="small">
+        معلومة للزائر: تُعد حائل نقطة انطلاق مثالية لاستكشاف النفود الكبير وتجربة أنشطة الصحراء.
+      </p>
+    </section>
+
+    <section id="culture" class="card">
+      <h2>لماذا حائل؟</h2>
+      <p>
+        لأنها تمزج بين قصة المكان وروح الناس: جبال تقابل كثبان، وأساطير تُروى حتى اليوم. هويتها تجمع الكرم والشعر والمغامرة، وهو ما نستلهمه في تجارب <b>رحّال</b>.
+      </p>
+      <div>
+        <span class="chip">أجا وسلمى</span>
+        <span class="chip">حاتم الطائي</span>
+        <span class="chip">نقوش جُبّة</span>
+        <span class="chip">قلعة أعيرف</span>
+        <span class="chip">النفود</span>
+      </div>
+    </section>
+
+    <section id="landmarks" class="card">
+      <h2>معالم نقترح زيارتها</h2>
+      <ul>
+        <li>
+          <b>جبال أجا وسلمى:</b> توقيع المدينة وأبرز أيقوناتها الطبيعية.
+          <a href="https://saudipedia.com/article/5527/%D8%AC%D8%BA%D8%B1%D8%A7%D9%81%D9%8A%D8%A7/%D8%AC%D8%A8%D8%A7%D9%84/%D8%AC%D8%A8%D9%84%D8%A7-%D8%A3%D8%AC%D8%A7-%D9%88%D8%B3%D9%84%D9%85%D9%89" class="btn small" aria-label="زيارة جبال أجا وسلمى" target="_blank" rel="noopener">زيارة الموقع</a>
+        </li>
+        <li>
+          <b>موقع جُبّة:</b> نقوش صخرية تعود لآلاف السنين — مادة مثالية للحكايات.
+          <a href="https://ar.wikipedia.org/wiki/%D8%AC%D8%A8%D8%A9_(%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9)" class="btn small" aria-label="زيارة موقع جُبّة" target="_blank" rel="noopener">زيارة الموقع</a>
+        </li>
+        <li>
+          <b>قلعة أعيرف:</b> موقع مرتفع يُطل على المدينة — لقطة بانورامية.
+          <a href="https://saudipedia.com/article/14145/%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE/%D9%85%D8%B9%D8%A7%D9%84%D9%85-%D9%88-%D8%A2%D8%AB%D8%A7%D8%B1/%D9%82%D9%84%D8%B9%D8%A9-%D8%B9%D9%8A%D8%B1%D9%81" class="btn small" aria-label="زيارة قلعة أعيرف" target="_blank" rel="noopener">زيارة الموقع</a>
+        </li>
+        <li>
+          <b>سوق برزان:</b> قلب تراثي للتسوّق والتذوق والتعرف على الصناعات.
+          <a href="https://ar.wikipedia.org/wiki/%D8%B3%D9%88%D9%82_%D8%A8%D8%B1%D8%B2%D8%A7%D9%86" class="btn small" aria-label="زيارة سوق برزان" target="_blank" rel="noopener">زيارة الموقع</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="hakaa" class="card">
+      <h2>عن لعبة «حكاة» (حائل)</h2>
+      <p>
+        «حكاة» هي أول محطة في رحلة <b>الرحّال</b> — لعبة تجمع اللغز بالحكاية. كل بطاقة تحوي طرف قصة أو بيت شعر أو أثر تراثي، وعلى اللاعبين وصل الخطوط ليظهر المعنى.
+      </p>
+      <ul>
+        <li>الهدف: جمع «خيوط الحكاية» من الرموز (نقش، جبلان، شعلة، قلعة) لبناء قصة متكاملة.</li>
+        <li>التجربة: تعاون/تنافس خفيف، يصلح للجلسات العائلية والشبابية.</li>
+        <li>الرسالة: اللعب وسيلة لمعرفة المكان — مو بس تسلية.</li>
+      </ul>
+    </section>
+<!-- 
+    <section id="qr" class="card">
+      <h2>للطباعة على العلبة</h2>
+      <p class="small">ضعوا هذا النص الصغير بجوار رمز QR:</p>
+      <ul>
+        <li>اعرف أكثر عن حائل و«حكاة»</li>
+        <li class="mono">rahhal.sa/hail</li>
+        <li>من «رحّال» — براند ألعاب ورقية وبورد قيمز واستوديو لتطوير الألعاب</li>
+      </ul>
+    </section>   -->
+  </main>
+
+  <footer class="footer container">
+    <div>© رحّال — براند ألعاب ورقية وبورد قيمز • استوديو تطوير ألعاب</div>
+    <div class="small">
+      هذا المحتوى مخصص كلمسة تثقيفية داخل التغليف. يمكن تعديل النصوص والصور وفق الحاجة.
+    </div>
+  </footer>
+
+  <!-- JSON-LD for SEO (optional if hosted) -->
+  <!--<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "رحّال | حائل",
+      "description": "لمسة تثقيفية عن مدينة حائل مقدّمة من رحّال ضمن لعبة حكاة.",
+      "url": "https://rahhal.sa/hail",
+      "inLanguage": "ar",
+      "isPartOf": {"@type":"Organization","name":"رحّال"},
+      "about": [
+        {"@type":"Place","name":"حائل","addressCountry":"SA"},
+        {"@type":"Thing","name":"أجا وسلمى"},
+        {"@type":"CreativeWork","name":"لعبة حكاة"}
+      ]
+    }
+  </script> -->
+</body>
+</html></div></footer></p>
